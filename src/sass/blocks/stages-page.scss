@@ -1,0 +1,216 @@
+.stages-page {
+  background-image: url(../img/paral.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 170px;
+
+  @include desktop {
+    padding-left: 10px;
+    padding-right: 60px;
+  }
+
+  @include tablet {
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.stages-page .index-block__title {
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+
+.stages-slider {
+  display: none;
+
+  @include desktop {
+    display: block;
+    padding-bottom: 50px;
+  }
+}
+
+.stages-slider .swiper-slide:not(:last-child) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background-image: url("../img/arrow-stage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.stages-slider .swiper-slide:not(:last-child) .stages-slide__wrap {
+  padding-right: 60px;
+}
+
+.stages-slide__title {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.stages-slide__text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.stages-slider .swiper-button-next,
+.stages-slider .swiper-button-prev {
+  top: auto;
+  bottom: 0;
+}
+
+.stages-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.stages-item {
+  position: relative;
+  max-width: 380px;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.stages-item:nth-child(2n + 1) {
+  margin-right: 80px;
+
+  @include desktop {
+    margin-right: 0;
+  }
+}
+
+.stages-item:nth-child(2n) {
+  margin-left: 80px;
+
+  @include desktop {
+    margin-left: 0;
+  }
+}
+
+.stages-item__img-block {
+  margin-right: 30px;
+}
+
+.stages-item__title {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.stages-item__text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.stages-item:nth-child(1),
+.stages-item:nth-child(5) {
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: -160px;
+    width: 120px;
+    height: 50px;
+    background-image: url("../img/arrow-stage.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.stages-item:nth-child(3) {
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -80px;
+    left: -110px;
+    width: 130px;
+    height: 103px;
+    background-image: url("../img/arrow-stage-4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: -160px;
+    width: 120px;
+    height: 50px;
+    background-image: url("../img/arrow-stage-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.stages-item:nth-child(2) {
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -80px;
+    right: -110px;
+    width: 130px;
+    height: 103px;
+    background-image: url("../img/arrow-stage-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.stages-item:nth-child(6) {
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -80px;
+    right: -250px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/cup.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

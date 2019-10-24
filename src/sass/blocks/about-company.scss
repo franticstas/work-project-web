@@ -1,0 +1,33 @@
+.about-company-first {
+  background-image: url("../img/bg.jpg");
+  background-size: contain;
+  padding-top: 200px;
+}
+
+.about-company-slider {
+  width: 450px;
+  height: 550px;
+  margin: 0 auto;
+ // padding: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about-company__slide {
+  background-color: grey;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.about-company__slide {
+  //z-index: 1;
+  //width: 100px !important;
+  //transition: all 1s;
+}
+
+.about-company__slide.swiper-slide-active {
+  z-index: 2;
+  background-color: blueviolet;
+  transform: scale(1.1);
+  transition: all 1s;
+}

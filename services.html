@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Zweb</title>
+</head>
+<body>
+<header class="header__block">
+  <div class="header__top">
+    <div class="header__logo">
+      <img src="src/img/logotype.svg" width="212" height="47" alt="">
+    </div>
+<!--    &lt;!&ndash;   ******************** ХЛЕБНЫЕ КРОШКИ ***************************&ndash;&gt;-->
+<!--    <ul class="breadcrumbs__list">-->
+<!--      <li class="breadcrumbs__item">-->
+<!--        <a href="#">Главная страница</a>-->
+<!--      </li>-->
+<!--      <li class="breadcrumbs__item breadcrumbs__current">-->
+<!--        <a>Создание сайтов</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    ***************** МЕНЮ ***********-->
+    <nav class="header__nav">
+      <!--        ******* Кнопка меню ********-->
+      <button class="header__button-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="index.html"><span>Главная</span></a>
+        </li>
+        <li class="header__nav-item active">
+          <a href="#"><span>Наши услуги</span></a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#"><span>Наши работы</span></a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#"><span>О студии</span></a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#"><span>Наши контакты</span></a>
+        </li>
+      </ul>
+      <a class="header__works-link-lang header__nav-link-lang" href="#">EN</a>
+    </nav>
+    <div class="mask__header-top"></div>
+  </div>
+  <div class="header__right">
+<!--    ********* Кнопка телефона **********-->
+    <button class="header__button-phone">
+    </button>
+<!--    ******** Фиксированный блок справа ********-->
+    <div class="header__right-fixed">
+<!--      ********* Меню **********-->
+      <ul class="right-nav__list">
+        <li class="right-nav__item">
+          <a href="#">Наши проекты</a>
+          <span>что мы можем</span>
+        </li>
+        <li class="right-nav__item">
+          <a href="#">О нашей студии</a>
+          <span>что мы используем и как подходим к работе</span>
+        </li>
+        <li class="right-nav__item">
+          <a href="#">Контакты</a>
+          <span>где нас найти</span>
+        </li>
+      </ul>
+      <div class="header__button-block">
+        <button class="open-form">Отправить заявку</button>
+        <a href="#">Pdf</a>
+      </div>
+      <div class="header__link-map-block">
+        <a class="header__link-map" href="#">Карта сайта</a>
+      </div>
+    </div>
+<!--    ********* Текстовый блок в открытом меню ***********-->
+    <div class="text-second-fixed">
+      <h2>Lorem ipsum dolor sit amet sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus.
+      </p>
+      <div class="text-second-fixed__contacts-block">
+        <div class="text-second-fixed__left-block">
+          <div class="text-second-fixed__title">
+            Позвоните нам
+          </div>
+          <a href="tel:+7(999)9999999">+7 (999) 999 99 99</a>
+        </div>
+        <div class="text-second-fixed__right-block">
+          <div class="text-second-fixed__title">
+            Напишите нам
+          </div>
+          <a href="mailto:blabla@mail.ru">blabla@mail.ru</a>
+        </div>
+      </div>
+    </div>
+<!--    ************ Блок формы в меню **************-->
+    <div class="text-form-fixed">
+      <form>
+        <label>
+          <input type="text" placeholder="Ваше имя">
+        </label>
+        <label>
+          <input type="email" placeholder="Ваш email">
+        </label>
+        <label>
+          <input type="text" placeholder="Ваше телефон">
+        </label>
+        <label>
+          <textarea cols="30" rows="10"  placeholder="Сообщение"></textarea>
+        </label>
+        <label class="check-label">
+          <input type="checkbox" class="check-input">
+          <span class="check-box"></span>
+          <span class="text-form-fixed__check-text" data-fancybox="" data-src="#modal-privacy" href="javascript:;">
+            Я даю согласие на обработку моих персональных данных
+          </span>
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+<!--    <a class="header__works-link" href="#">Наши работы</a>-->
+    <a class="header__works-link-lang" href="#">EN</a>
+    <div class="mask"></div>
+  </div>
+  <a href="tel:88008888888" class="header__phone-link"></a>
+</header>
+<!--***************** Хлебные крошки *********************-->
+<ul class="breadcrumbs__list breadcrumbs__list--desktop">
+  <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+  <li class="breadcrumbs__item"><a href="#">Наши услуги</a></li>
+  <li class="breadcrumbs__item breadcrumbs__current"><a>Тест</a></li>
+</ul>
+<main>
+<!--  ********** Вертикальный слайдер ************-->
+  <div class="swiper-container main-slider">
+    <div class="swiper-wrapper">
+      <!--      ********* Слайд вертикального слайда ***********-->
+      <div class="swiper-slide main-slide">
+        <div class="slide-page index-block">
+          <!--***************** Хлебные крошки *********************-->
+          <ul class="breadcrumbs__list breadcrumbs__list--mobile">
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#">Наши услуги</a></li>
+            <li class="breadcrumbs__item breadcrumbs__current"><a>Тест</a></li>
+          </ul>
+          <div class="index-block__wrapper">
+            <h1 class="index-block__title">
+              Lorem ipsum dolor sit amet
+            </h1>
+            <div class="index-block__subtitle">
+              Lorem ipsum dolor sit amet dolor sit amet
+            </div>
+            <div class="index-block__buttons">
+              <button class="index-block__open-form">Обсудить мой проект</button>
+              <a href="#" class="index-block__link-works">Наши работы</a>
+            </div>
+            <ul class="index-block__advantages-list">
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+              <li class="index-block__advantages-item">
+                <div class="index-block__advantages-img-block">
+                  <img src="src/img/icon-project.svg" width="77" height="87" alt="">
+                </div>
+                <div class="index-block__advantages-text-block">
+                  <h3>
+                    Преимущество
+                  </h3>
+                  <div class="index-block__advantages-item-text">
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--      ********* Слайд вертикального слайда ***********-->
+      <div class="swiper-slide main-slide">
+        <div class="slide-page type-sites-slide">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <div class="type-sites__sub-title">
+            Lorem ipsum dolor sit amet
+          </div>
+          <div class="swiper-container type-sites__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+              <div class="swiper-slide type-sites__item">
+                <div class="type-sites__info">
+                  <h3>Визитка</h3>
+                  <span>Сайт-визитка</span>
+                  <ul class="type-sites__info-list">
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                    <li class="type-sites__info-item">
+                      Lorem ipsum
+                    </li>
+                  </ul>
+                </div>
+                <a href="#" class="type-sites__price">Узнать стоимость</a>
+                <a href="#" class="type-sites__more">Узнать подробнее</a>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+      <!--      *************** Слайд с портфолио ****************-->
+      <div class="swiper-slide main-slide">
+        <div class="slide-page portfolio-block">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <div class="portfolio-slide-wrapper">
+            <div class="swiper-container portfolio-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <!--                    <button class="index-block__open-form">Обсудить мой проект</button>-->
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <!--                    <button class="index-block__open-form">Обсудить мой проект</button>-->
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <!--                    <button class="index-block__open-form">Обсудить мой проект</button>-->
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <!--                    <button class="index-block__open-form">Обсудить мой проект</button>-->
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container portfolio-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="portfolio-mobile-slider">
+            <div class="swiper-container portfolio-mobile-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="src/img/portfolio1.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="src/img/portfolio2.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="src/img/portfolio1.png" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="src/img/portfolio1.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+        <div class="slide-page services-slide">
+          <div class="services-slide__left">
+            <h2>
+              Создание сайтов на заказ
+            </h2>
+            <p>
+              Что делает человек, который заинтересовался каким-то продуктом
+              или услугой? Он заходит в интернет и гуглит. И выходит на десяток
+              сайтов, которые предлагают ему искомое. Именно поэтому если Вас
+              нет в Интернете, то Вы упускаете огромную возможность для рекламы,
+              не используете очень мощный инструмент для воздействия на свою
+              аудиторию. Именно в Интернете сейчас происходит основное продвижение
+              любого услуги или продукта, и способы, как и сайты, бывают самыми
+              разными.
+            </p>
+            <p>
+              Для начала – Вам нужно создание сайтов на заказ. Каким должен быть
+              качественный сайт, который принесет Вам прибыль и клиентов, а
+              также окупит вложенные в него средства?
+            </p>
+            <ul>
+              <li>Он должен быть продающим;</li>
+              <li>Он должен обладать уникальным, запоминающимся дизайном;</li>
+              <li>
+                Он должен иметь подходящий функционал, который будет
+                оптимален для Вашего бизнеса.
+              </li>
+            </ul>
+            <p>
+              Для того, чтобы Ваш сайт сочетал в себе эти свойства, необходимо
+              заказать разработку сайта под ключ у профессионалов, которые знают,
+              как сделать из набора символов по-настоящему успешный проект,
+              который привлечет Вам новых клиентов и увеличит Вашу прибыль.
+            </p>
+            <h2>
+              Мы – веб-студия, которая успешно занимается созданием сайтов на заказ.
+            </h2>
+            <p>
+              Почему стоит заказать создание сайта именно у нас?
+            </p>
+            <ul>
+              <li>
+                Потому что у нас за плечами – более 300 успешных проектов и
+                довольных клиентов. Мы наработали внушительный профессиональный
+                опыт, который позволяет нам с легкостью браться за любые, самые
+                сложные задачи: корпоративные сайты, сайт-визитка, лендинг и
+                многое другое.
+              </li>
+              <li>
+                Потому что мы – специалисты: у каждого сотрудника нашей
+                компании соответствующая квалификация и опыт.
+              </li>
+              <li>
+                Потому что мы работаем с каждым клиентом индивидуально:
+                если Вы решите заказать создание сайта у нас, мы проведим
+                тщательный анализ Вашего бизнеса, изучаем Вашу аудиторию и
+                ее потребности, чтобы в конечном итоге создать продукт,
+                который будет точно воздействовать на Вашего потенциального клиента.
+              </li>
+              <li>
+                Потому что у нас Вы можете заказать создание сайта под ключ -
+                Ваш сайт будет сразу готов к работе.
+              </li>
+              <li>
+                Потому мы работаем по договору и гарантии. Все работы начинаются
+                сразу после заключения договора.
+              </li>
+            </ul>
+          </div>
+          <div class="services-slide__right">
+            <h2>
+              С нами разработка сайта под ключ – это гарантированно
+              успешная работа. Ваш сайт будет:
+            </h2>
+            <ul>
+              <li>
+                Обладать адаптивной версткой (смартфоны, ноутбуки, ПК);
+              </li>
+              <li>
+                Иметь понятный и удобный для посетителя интерфейс;
+              </li>
+              <li>
+                При необходимости будут интегрированы в 1С, подключены к
+                онлайн-кассам и будут обладать другими техническими возможностями
+                для удобного пользования;
+              </li>
+              <li>
+                После нашей разработки сайта под ключ Вы сможете продвигать
+                Ваш сайт при помощи СЕО-продвижения и других способов рекламы.
+              </li>
+            </ul>
+            <p>
+              Возникли какие-то вопросы о том, как заказать разработку сайта
+              под ключ? В этом случае Вы можете позвонить по телефону,
+              указанному на сайте – наши менеджеры охотно объяснят Вам все
+              нюансы, а также помогут определиться с выбором, если Вы плохо
+              разбираетесь в этом вопросе. Для того, чтобы заказать создание
+              сайта под ключ также можно заполнить форму на сайте – Ваша
+              заявка будет рассмотрена в ближайшее время. С нами Ваш бизнес
+              пойдет в гору, ведь как известно, если Вас нет в Интернете –
+              Вас нет в бизнесе!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+        <div class="slide-page slide-footer">
+          <div class="slide-footer__left">
+            <div class="slide-footer__block">
+              <div class="slide-footer__title">
+                Где мы находимся
+              </div>
+              <address>
+                Россия, Ростов-на-Дону ул. Ивановского 38, 344012
+              </address>
+            </div>
+            <div class="slide-footer__block">
+              <div class="slide-footer__title">
+                Позвони нам
+              </div>
+              <a href="tel:+7 (999) 999 99 99">тел. +7 (999) 999 99 99</a>
+              <a href="tel:+7 (999) 999 99 99">тел. +7 (999) 999 99 99</a>
+            </div>
+            <div class="slide-footer__block">
+              <div class="slide-footer__title">
+                Мы работаем
+              </div>
+              <div class="slide-footer__text">
+                Пн - Пт
+              </div>
+              <div class="slide-footer__text">
+                с 9:00 до 18:00
+              </div>
+            </div>
+          </div>
+          <div class="slide-footer__right">
+            <div class="slide-footer__right-title">
+              У Вас остались вопросы?
+            </div>
+            <form>
+              <label>
+                <input type="text" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input type="email" placeholder="Ваш email">
+              </label>
+              <label>
+                <input type="text" placeholder="Ваше телефон">
+              </label>
+              <label>
+                <textarea name="" id="" cols="30" rows="10"  placeholder="Сообщение"></textarea>
+              </label>
+              <label class="check-label">
+                <input type="checkbox" class="check-input">
+                <span class="check-box"></span>
+                <span class="text-form-fixed__check-text">
+                  Я даю согласие <a href="#">на обработку моих персональных данных</a>
+                </span>
+              </label>
+              <div class="index-block__buttons">
+                <button class="index-block__open-form" type="submit">Позвоните мне</button>
+                <a href="#" class="index-block__link-works">Наши контакты</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination main-slider-pagination"></div>
+  </div>
+</main>
+<footer>
+
+</footer>
+
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

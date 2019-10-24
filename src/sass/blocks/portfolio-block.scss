@@ -1,0 +1,108 @@
+/*
+ * Слайд портфолио
+ */
+.portfolio-block {
+  background-image: url("../img/paral.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-left: 70px;
+  padding-right: 140px;
+
+  @include desktop {
+    padding-right: 60px;
+  }
+
+  @include tablet {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.portfolio-block h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+.portfolio-slide-wrapper {
+  display: flex;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.portfolio-top {
+  width: 40%;
+}
+
+.portfolio-top .swiper-slide {
+  box-sizing: border-box;
+}
+
+.portfolio-thumbs {
+  width: 60%;
+  padding-top: 30px;
+  padding-bottom: 140px;
+}
+
+.portfolio-thumbs .swiper-slide {
+  max-width: 30%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.portfolio-thumbs .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  }
+}
+
+.portfolio-thumbs .swiper-button-next,
+.portfolio-thumbs .swiper-button-prev {
+  bottom: 0;
+  top: auto;
+  width: 65px;
+  height: 65px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+}
+
+.portfolio-thumbs .swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='28' viewBox='0 0 12 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1.42883' height='16.8603' transform='matrix(0.594178 0.804334 -0.594178 0.804334 10.7168 0)' fill='white'/%3E%3Crect width='1.42883' height='16.7734' transform='matrix(-0.594178 0.804334 -0.594178 -0.804334 10.8154 26.8506)' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.portfolio-thumbs .swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='28' viewBox='0 0 12 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1.42883' height='16.8603' transform='matrix(-0.594178 -0.804334 0.594178 -0.804334 0.848633 28)' fill='white'/%3E%3Crect width='1.42883' height='16.7734' transform='matrix(0.594178 -0.804334 0.594178 0.804334 0.75 1.14917)' fill='white'/%3E%3C/svg%3E%0A");
+  left: 95px;
+}
+
+.portfolio-thumbs .swiper-slide-thumb-active {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.portfolio-mobile-slider {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.portfolio-mobile-slider .swiper-slide a {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,103 @@
+.type-sites-slide {
+  background-image: url("../img/paral.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #000000;
+  padding-right: 120px;
+  padding-left: 20px;
+  padding-top: 150px;
+
+  @include desktop {
+    padding-right: 60px;
+    padding-bottom: 20px;
+  }
+
+  @include tablet {
+    padding-right: 20px;
+  }
+}
+
+.type-sites-slide h2 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+}
+
+.type-sites__sub-title {
+  text-align: center;
+  font-size: 29px;
+  line-height: 33px;
+  margin-bottom: 90px;
+}
+
+.type-sites__slider {
+  @include desktop {
+    //padding-left: 60px;
+    //padding-right: 60px;
+  }
+}
+
+.type-sites__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.type-sites__info {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 5px;
+  box-sizing: border-box;
+}
+
+.type-sites__info h3 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.type-sites__info span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.type-sites__info-list {
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.type-sites__info-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.type-sites__item a {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.type-sites__price {
+  background-color: #429B4B;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.type-sites__more {
+  border: 1px solid #ffffff;
+}

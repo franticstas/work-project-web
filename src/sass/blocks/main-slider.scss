@@ -1,0 +1,134 @@
+.main-slider {
+  width: 100%;
+  height: 100vh;
+
+  @include desktop {
+    height: auto;
+  }
+}
+
+.main-slide {
+  width: 100%;
+  height: 100vh;
+  //border: 1px solid blue;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    height: auto;
+  }
+}
+
+.slide-page {
+  width: 100%;
+  height: 100vh;
+  //box-sizing: border-box;
+
+  @include desktop {
+    height: auto;
+  }
+}
+
+/*
+ * Пагинация вертикального слайдера
+ */
+.swiper-pagination.main-slider-pagination {
+  right: 55px;
+
+  @include desktop {
+    right: 25px;
+    display: block;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-slider > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.main-slider-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  position: relative;
+
+  &::before {
+    transition: transform 1s;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 37px;
+    background-color: #ffffff;
+    bottom: -36px;
+    left: 4px;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+
+  &::after {
+    transition: transform 1s;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 37px;
+    background-color: #ffffff;
+    bottom: -36px;
+    left: 4px;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+}
+
+.main-slider-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  position: relative;
+
+  &::before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    bottom: -36px;
+    left: 4px;
+  }
+
+  &::after {
+    transform: scaleY(1);
+    transform-origin: top;
+    bottom: -36px;
+    left: 4px;
+  }
+}
+
+.pagination__num {
+  position: absolute;
+  bottom: -27px;
+  left: -19px;
+  display: none;
+}
+
+.main-slider-pagination .swiper-pagination-bullet-active .pagination__num {
+  display: block;
+}
+
+.swiper-pagination-bullet--last {
+  &::before {
+    display: none;
+  }
+}
+
+.swiper-container.main-slider {
+  @include desktop {
+    overflow-y: auto;
+  }
+}
+
+.main-slider > .swiper-wrapper {
+  @include desktop {
+    flex-direction: column;
+  }
+}

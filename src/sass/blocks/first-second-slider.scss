@@ -1,0 +1,317 @@
+.first-page-slider,
+.second-page-slider {
+  width: 100%;
+  height: 100vh;
+
+  @include desktop {
+    height: auto;
+    background-color: black;
+    padding-bottom: 50px;
+  }
+}
+
+.first-page-slide,
+.second-page-slide {/*Стили в слайдере*/
+  width: 100%;
+  height: 100vh;
+  //border: 1px solid yellow;
+  box-sizing: border-box;
+  //display: flex;
+  //align-items: center;
+  padding-left: 450px;
+  padding-top: 200px;
+  padding-right: 120px;
+
+  @include desktop {
+    padding-left: 0;
+    padding-top: 150px;
+    padding-right: 60px;
+    height: auto;
+  }
+
+  @include tablet {
+    padding-top: 100px;
+    padding-right: 0;
+  }
+}
+
+.first-page-slide__title {
+  font-size: 60px;
+  line-height: 70px;
+
+  @include desktop {
+    text-align: center;
+  }
+
+  @include tablet {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+.first-page-slide .index-block__open-form {/*Кнопки слайдов*/
+  @include desktop {
+    display: none;
+  }
+}
+
+.first-page-slide .index-block__buttons {
+  @include desktop {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.first-page__button a {
+  background: #429B4B;
+  border-radius: 3px;
+  padding: 22px 45px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.works-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 770px;
+
+  @include desktop {
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.works-item {
+  padding-right: 43px;
+  //padding-left: 15px;
+
+  @include tablet {
+    padding-right: 0;
+  }
+}
+
+.works-item:not(:last-child) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: " /";
+    font-size: 29px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.works-list a {
+  color: #ffffff;
+  font-size: 29px;
+  line-height: 33px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    text-decoration: underline;
+  }
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.work-projects__list {
+  //display: flex;
+  flex-wrap: wrap;
+  margin-top: 180px;
+  justify-content: flex-start;
+  display: none;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.work-projects__item {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  min-height: 100px;
+  padding-left: 105px;
+  max-width: 325px;
+}
+
+.work-projects__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.work-projects__num {
+  font-size: 31px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.work-projects__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.work-projects__text {
+  font-size: 14px;
+  color: #929292;
+  font-weight: 600;
+}
+
+.parallax-bg {/*Паралакс фон горизонтальный на первом экране*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+
+  @include desktop {
+    height: auto;
+  }
+}
+
+/*
+ * Пагинация горизонтального слайдера
+ */
+
+.swiper-pagination.first-page-pagination,
+.swiper-pagination.second-page-pagination {
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  left: 10px;
+  width: 360px !important;
+  border-right: 1px solid rgba(196,196,196, 0.2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+
+  @include desktop {
+    border: none;
+    top: auto !important;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    bottom: 20px;
+    flex-direction: row;
+    height: auto;
+    padding-right: 60px;
+  }
+
+  @include tablet {
+    padding-right: 0;
+  }
+}
+
+.first-page-pagination .swiper-pagination-bullet,
+.second-page-pagination .swiper-pagination-bullet {
+  padding: 5px 10px;
+  border-radius: 0;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  opacity: 1;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 17px;
+  padding-bottom: 45px;
+  padding-right: 80px;
+  display: inline-block;
+  letter-spacing: initial;
+  text-align: right;
+  margin-right: 0 !important;
+
+  @include desktop {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 0;
+  }
+}
+.first-page-pagination .swiper-pagination-bullet-active,
+.second-page-pagination .swiper-pagination-bullet-active {
+  color:#fff;
+  background: linear-gradient(270deg, rgba(66, 155, 75, 0.05) 0%, rgba(66, 155, 75, 0) 100%);
+
+  @include desktop {
+    background-color: green;
+  }
+}
+
+//.first-page-pagination .swiper-pagination-bullet,
+//.second-page-pagination .swiper-pagination-bullet {
+//  color: #ffffff;
+//  background-color: transparent;
+//  font-size: 16px;
+//  font-weight: 500;
+//  padding-top: 17px;
+//  padding-bottom: 45px;
+//  padding-right: 80px;
+//  display: inline-block;
+//  letter-spacing: initial;
+//  text-align: right;
+//}
+
+.first-page-pagination .swiper-pagination-bullet-active,
+.second-page-pagination .swiper-pagination-bullet-active {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #1FFFA4;
+    width: 3px;
+    height: 100%;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin-bottom: 15px;
+}
+
+.pagination-text {/*Текс горизонтальных слайдов*/
+  @include desktop {
+    display: none;
+  }
+}

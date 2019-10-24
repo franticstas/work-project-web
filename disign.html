@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/css/swiper.min.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Zweb</title>
+</head>
+<body>
+<header class="header__block">
+  <div class="header__top">
+    <div class="header__logo">
+      <img src="src/img/logotype.svg" width="212" height="47" alt="">
+    </div>
+<!--    &lt;!&ndash;   ******************** ХЛЕБНЫЕ КРОШКИ ***************************&ndash;&gt;-->
+<!--    <ul class="breadcrumbs__list">-->
+<!--      <li class="breadcrumbs__item">-->
+<!--        <a href="#">Главная страница</a>-->
+<!--      </li>-->
+<!--      <li class="breadcrumbs__item breadcrumbs__current">-->
+<!--        <a>Создание сайтов</a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--    ***************** МЕНЮ ***********-->
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Наши услуги</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Наши работы</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">О студии</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#">Наши контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__right">
+<!--    ********* Кнопка телефона **********-->
+    <button class="header__button-phone">
+    </button>
+<!--    ******* Кнопка меню ********-->
+<!--    <button class="header__button-nav">-->
+<!--      <span></span>-->
+<!--      <span></span>-->
+<!--      <span></span>-->
+<!--    </button>-->
+<!--    ******** Фиксированный блок справа ********-->
+    <div class="header__right-fixed">
+<!--&lt;!&ndash;      ********* Меню **********&ndash;&gt;-->
+<!--      <nav class="header__nav">-->
+<!--        <ul class="nav__list">-->
+<!--          <li class="nav__item">-->
+<!--            <a href="#">Наши проекты</a>-->
+<!--            <span>что мы можем</span>-->
+<!--          </li>-->
+<!--          <li class="nav__item">-->
+<!--            <a href="#">О нашей студии</a>-->
+<!--            <span>что мы используем и как подходим к работе</span>-->
+<!--          </li>-->
+<!--          <li class="nav__item">-->
+<!--            <a href="#">Контакты</a>-->
+<!--            <span>где нас найти</span>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </nav>-->
+      <div class="header__button-block">
+        <button class="open-form">Отправить заявку</button>
+        <a href="#">Pdf</a>
+      </div>
+      <div class="header__link-map-block">
+        <a class="header__link-map" href="#">Карта сайта</a>
+      </div>
+    </div>
+<!--    ********* Текстовый блок в открытом меню ***********-->
+    <div class="text-second-fixed">
+      <h2>Lorem ipsum dolor sit amet sit amet</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus.
+      </p>
+      <div class="text-second-fixed__contacts-block">
+        <div class="text-second-fixed__left-block">
+          <div class="text-second-fixed__title">
+            Позвоните нам
+          </div>
+          <a href="tel:+7(999)9999999">+7 (999) 999 99 99</a>
+        </div>
+        <div class="text-second-fixed__right-block">
+          <div class="text-second-fixed__title">
+            Напишите нам
+          </div>
+          <a href="mailto:blabla@mail.ru">blabla@mail.ru</a>
+        </div>
+      </div>
+    </div>
+<!--    ************ Блок формы в меню **************-->
+    <div class="text-form-fixed">
+      <form>
+        <label>
+          <input type="text" placeholder="Ваше имя">
+        </label>
+        <label>
+          <input type="email" placeholder="Ваш email">
+        </label>
+        <label>
+          <input type="text" placeholder="Ваше телефон">
+        </label>
+        <label>
+          <textarea name="" id="" cols="30" rows="10"  placeholder="Сообщение"></textarea>
+        </label>
+        <label class="check-label">
+          <input type="checkbox" class="check-input">
+          <span class="check-box"></span>
+          <span class="text-form-fixed__check-text" data-fancybox="" data-src="#modal-privacy" href="javascript:;">
+            Я даю согласие на обработку моих персональных данных
+          </span>
+        </label>
+        <button>Отправить</button>
+      </form>
+    </div>
+<!--    <a class="header__works-link" href="#">Наши работы</a>-->
+    <a class="header__works-link-lang" href="#">EN</a>
+    <div class="mask"></div>
+  </div>
+</header>
+<main>
+<!--  ********** Вертикальный слайдер ************-->
+  <div class="swiper-container main-slider">
+    <div class="swiper-wrapper">
+      <!--      ********* Слайд вертикального слайда ***********-->
+      <div class="swiper-slide main-slide">
+        <div class="slide-page index-block">
+          <div class="index-block__wrapper">
+            <h1 class="index-block__title">
+              Lorem ipsum dolor sit amet
+            </h1>
+            <div class="index-block__subtitle">
+              Lorem ipsum dolor sit amet dolor sit amet
+            </div>
+            <div class="index-block__buttons">
+              <button class="index-block__open-form">Обсудить мой проект</button>
+              <a href="#" class="index-block__link-works">Наши работы</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+<!--      ********* Слайд вертикального слайда ***********-->
+        <div class="slide-page">
+<!--          *********** Горизонтальный слайдер **********-->
+          <div class="swiper-container first-page-slider">
+            <div class="parallax-bg" style="background-image:url('src/img/paral.svg')" data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper first-page-slider-wrapper">
+<!--              ********** Слайд горизонтального слайдера *********-->
+              <div class="swiper-slide first-page-slide" data-name="Продвижение сайтов">
+                <h1 class="first-page-slide__title">Мы создаем сайты</h1>
+                <ul class="works-list">
+                  <li class="works-item">
+                    <a href="#">Сайт-визитка</a>
+                  </li>
+                  <li class="works-item">
+                    <a href="#">Корпоративный сайт</a>
+                  </li>
+                  <li class="works-item">
+                    <a href="#">Hrending page</a>
+                  </li>
+                  <li class="works-item">
+                    <a href="#">Интернет-магазин</a>
+                  </li>
+                  <li class="works-item">
+                    <a href="#">Портал в Азерот</a>
+                  </li>
+                </ul>
+                <div class="first-page__button">
+                  <a href="#">Обсудить мой проект</a>
+                </div>
+                <div class="work-projects__list">
+                  <div class="work-projects__item" style="background-image: url('src/img/icon-project.svg')">
+                    <div class="work-projects__num">76</div>
+                    <div class="work-projects__title">Проектов готово</div>
+                    <div class="work-projects__text">Доводим проекты от дизайна до реальных продаж</div>
+                  </div>
+                  <div class="work-projects__item" style="background-image: url('src/img/icon-project.svg')">
+                    <div class="work-projects__num">76</div>
+                    <div class="work-projects__title">Проектов готово</div>
+                    <div class="work-projects__text">Доводим проекты от дизайна до реальных продаж</div>
+                  </div>
+                  <div class="work-projects__item" style="background-image: url('src/img/icon-project.svg')">
+                    <div class="work-projects__num">76</div>
+                    <div class="work-projects__title">Проектов готово</div>
+                    <div class="work-projects__text">Доводим проекты от дизайна до реальных продаж</div>
+                  </div>
+                </div>
+              </div>
+              <!--              ********** Слайд горизонтального слайдера *********-->
+              <div class="swiper-slide first-page-slide" data-name="Создание сайтов">
+                <h1>Заголовок 2</h1>
+                <div id="num-3">~15</div>
+              </div>
+              <!--              ********** Слайд горизонтального слайдера *********-->
+              <div class="swiper-slide first-page-slide" data-name="Графический дизайн">
+                <h1>Заголовок 3</h1>
+              </div>
+              <!--              ********** Слайд горизонтального слайдера *********-->
+              <div class="swiper-slide first-page-slide" data-name="Реклама">
+                <h1>Заголовок 4</h1>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination first-page-pagination"></div>
+          </div>
+        </div>
+      </div>
+<!--      ***************** Второй вертикальный слайдер *************-->
+      <div class="swiper-slide main-slide">
+        <!--      ********* Слайд вертикального слайда ***********-->
+        <div class="slide-page">
+          <!--          *********** Горизонтальный слайдер **********-->
+          <div class="swiper-container second-page-slider">
+            <div class="parallax-bg" style="background-image:url('src/img/paralax.jpg')" data-swiper-parallax="-23%"></div>
+            <div class="swiper-wrapper second-page-slider-wrapper">
+              <!--              ********** Слайд горизонтального слайдера *********-->
+              <div class="swiper-slide second-page-slide" data-name="Контактные данные">
+                <h1>Заголовок 3</h1>
+              </div>
+              <div class="swiper-slide second-page-slide" data-name="Построить маршрут">
+                <h1>Заголовок 3</h1>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination second-page-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">
+        <div class="slide-page portfolio-block">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <div class="portfolio-slide-wrapper">
+            <div class="swiper-container portfolio-top">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 1</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <button class="index-block__open-form">Обсудить мой проект</button>
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <button class="index-block__open-form">Обсудить мой проект</button>
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <button class="index-block__open-form">Обсудить мой проект</button>
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <h3>Lorem ipsum dolor sit amet Слайд 2</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                    Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                  </p>
+                  <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                  <div class="index-block__buttons">
+                    <button class="index-block__open-form">Обсудить мой проект</button>
+                    <a href="#" class="index-block__link-works">Наши работы</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container portfolio-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="src/img/portfolio1.png" alt="">
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide main-slide">Slide 4</div>
+      <div class="swiper-slide main-slide">Slide 5</div>
+      <div class="swiper-slide main-slide">Slide 6</div>
+      <div class="swiper-slide main-slide">Slide 7</div>
+      <div class="swiper-slide main-slide">Slide 8</div>
+      <div class="swiper-slide main-slide">Slide 9</div>
+      <div class="swiper-slide main-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination main-slider-pagination"></div>
+  </div>
+</main>
+<footer>
+
+</footer>
+
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/js/swiper.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

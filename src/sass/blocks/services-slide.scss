@@ -1,0 +1,41 @@
+.services-slide {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding-right: 120px;
+  padding-left: 20px;
+  padding-top: 150px;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include desktop {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+}
+
+.services-slide h2 {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.services-slide__left {
+  width: 45%;
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.services-slide__right {
+  width: 45%;
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.services-slide p {
+  text-align: justify;
+}
