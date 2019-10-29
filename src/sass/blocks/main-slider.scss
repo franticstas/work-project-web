@@ -122,9 +122,9 @@
 }
 
 .swiper-container.main-slider {
-  @include desktop {
-    overflow-y: auto;
-  }
+  //@include desktop {
+  //  overflow-y: auto;
+  //}
 }
 
 .main-slider > .swiper-wrapper {

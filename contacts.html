@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="src/css/swiper.min.css">
   <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e180eaa5-fdd4-40b5-b3b5-79e9b7a2bbde" type="text/javascript"></script>
   <title>Zweb</title>
 </head>
 <body>
@@ -42,10 +43,10 @@
         <li class="header__nav-item">
           <a href="#"><span>Наши работы</span></a>
         </li>
-        <li class="header__nav-item active">
+        <li class="header__nav-item">
           <a href="#"><span>О студии</span></a>
         </li>
-        <li class="header__nav-item">
+        <li class="header__nav-item active">
           <a href="#"><span>Наши контакты</span></a>
         </li>
       </ul>
@@ -146,117 +147,101 @@
 <!--***************** Хлебные крошки *********************-->
 <ul class="breadcrumbs__list breadcrumbs__list--desktop">
   <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-  <li class="breadcrumbs__item"><a href="#">Наши услуги</a></li>
-  <li class="breadcrumbs__item breadcrumbs__current"><a>Тест</a></li>
+  <li class="breadcrumbs__item breadcrumbs__current"><a>Наши контакты</a></li>
 </ul>
 <main>
 <!--  ********** Вертикальный слайдер ************-->
   <div class="swiper-container main-slider">
     <div class="swiper-wrapper">
-      <!--      ********* Слайд вертикального слайда ***********-->
+      <!--      ********* Слайд контактные данные ***********-->
       <div class="swiper-slide main-slide">
-        <div class="slide-page index-about-company">
+        <div class="slide-page contacts-top">
           <!--***************** Хлебные крошки *********************-->
           <ul class="breadcrumbs__list breadcrumbs__list--mobile">
             <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-            <li class="breadcrumbs__item"><a href="#">Наши услуги</a></li>
-            <li class="breadcrumbs__item breadcrumbs__current"><a>Тест</a></li>
+            <li class="breadcrumbs__item breadcrumbs__current"><a>Наши контакты</a></li>
           </ul>
-          <div class="index-about-company__wrapper">
-            <div class="index-about-company__left">
-              <div class="swiper-container about-company-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="src/img/about-slide.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="src/img/about-slide.jpg" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="src/img/about-slide.jpg" alt="">
-                  </div>
+          <div class="slide-page contacts-top__wrapper">
+            <div class="slide-footer__left">
+              <div class="slide-footer__block">
+                <div class="slide-footer__title">
+                  Где мы находимся
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <address>
+                  Россия, Ростов-на-Дону ул. Ивановского 38, 344012
+                </address>
+              </div>
+              <div class="slide-footer__block">
+                <div class="slide-footer__title">
+                  Позвони нам
+                </div>
+                <a href="tel:+7 (999) 999 99 99">тел. +7 (999) 999 99 99</a>
+                <a href="tel:+7 (999) 999 99 99">тел. +7 (999) 999 99 99</a>
+              </div>
+              <div class="slide-footer__block">
+                <div class="slide-footer__title">
+                  Мы работаем
+                </div>
+                <div class="slide-footer__text">
+                  Пн - Пт
+                </div>
+                <div class="slide-footer__text">
+                  с 9:00 до 18:00
+                </div>
               </div>
             </div>
-            <div class="index-about-company__right">
-              <h1>О нашей студии</h1>
-              <h2>Мы работаем с 2015 года</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-                pretium quis, sem. Nulla consequat massa quis enim. Donec pede
-                justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-                natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-              </p>
-              <h2>Мы постоянно развиваемся</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-              </p>
+            <div class="slide-footer__right">
+              <div class="slide-footer__right-title">
+                У Вас остались вопросы?
+              </div>
+              <form>
+                <label>
+                  <input type="text" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input type="email" placeholder="Ваш email">
+                </label>
+                <label>
+                  <input type="text" placeholder="Ваше телефон">
+                </label>
+                <label>
+                  <textarea name="" id="" cols="30" rows="10"  placeholder="Сообщение"></textarea>
+                </label>
+                <label class="check-label">
+                  <input type="checkbox" class="check-input">
+                  <span class="check-box"></span>
+                  <span class="text-form-fixed__check-text">
+                  Я даю согласие <a href="#">на обработку моих персональных данных</a>
+                </span>
+                </label>
+                <div class="index-block__buttons">
+                  <button class="index-block__open-form" type="submit">Позвоните мне</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-      <!--      ********* Слайд вертикального слайда ***********-->
+      <!--      ********* Слайд где мы находимся ***********-->
       <div class="swiper-slide main-slide">
-        <div class="slide-page employees">
-<!--          ************* Слайдер сотрудников **********-->
-          <div class="swiper-container employees-slider">
-            <div class="swiper-wrapper">
-<!--              ********* Первый слайд *********-->
-              <div class="swiper-slide employee-slide">
-                <div class="employee-slide__left">
-                  <div class="swiper-container employee-top-slide">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="employee-slide__right">
-                  <h3 class="employee-slide__title">Lorem ipsum dolor sit amet</h3>
-                  <div class="employee-slide__text">
-                    Lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem
-                    ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum
-                    dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor
-                    sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit
-                    amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                    lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem
-                    ipsum dolor sit amet lorem ipsum dolor sit amet
-                  </div>
-                  <div class="employee-slide__title">
-                    Выполненные проекты
-                  </div>
-                  <div class="swiper-container employee-thumbs-slide">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">Slide 1</div>
-                      <div class="swiper-slide">Slide 2</div>
-                      <div class="swiper-slide">Slide 3</div>
-                    </div>
-                  </div>
-                </div>
+        <div class="slide-page contacts-bottom">
+          <div class="contacts-bottom__wrapper">
+            <div class="slide-footer__left">
+              <div id="map"></div>
+            </div>
+            <div class="slide-footer__right">
+              <div class="contacts-bottom__title">
+                Как до нас добраться
               </div>
-              <div class="swiper-slide employee-slide">
-
-              </div>
-              <div class="swiper-slide employee-slide">
-
+              <div class="slide-footer__block">
+                <div class="slide-footer__title">
+                  мы находимся
+                </div>
+                <address>
+                  Россия, Ростов-на-Дону ул. Ивановского 38, 344012
+                </address>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
