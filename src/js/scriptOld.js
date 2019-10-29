@@ -189,6 +189,7 @@ var swiperEmployees = new Swiper('.employees-slider', {
     },
   });
 
+//перенес
   var swiperPortfolio = new Swiper('.portfolio-mobile-slider', {
     navigation: {
       nextEl: '.swiper-button-next',
@@ -202,6 +203,7 @@ var swiperEmployees = new Swiper('.employees-slider', {
     }
   });
 
+//перенес
   var swiperTypesSites = new Swiper('.type-sites__slider', {
     navigation: {
       nextEl: '.swiper-button-next',
