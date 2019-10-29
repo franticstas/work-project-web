@@ -38,11 +38,9 @@ $('.main-slider-pagination').append('<span class="swiper-pagination-bullet swipe
 //-----------------------------------------------------------------------------
 $(document).ready(function() {
 
-  setTimeout(() => {
-    // $('.main-slider').trigger('mouseenter');
-    // $('.main-slider').trigger('mouseleave');
-    // $('.main-slider').trigger('pointerdown');
-    // $('.main-slider').trigger('wheel');
-    window.onresize();
-  }, 1000);
+  $(document).ready(function() {
+    const slider = document.querySelector('.main-slider');
+    slider.dispatchEvent(new Event('mouseenter'));
+  });
+
 });
