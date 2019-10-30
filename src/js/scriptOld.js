@@ -47,6 +47,8 @@
 
   $(window).on('load resize',windowSize);
 
+
+//Перенес
 var swiperEmployees = new Swiper('.employees-slider', {
   slidesPerView: 3,
   spaceBetween: 0,
@@ -114,7 +116,7 @@ var swiperEmployees = new Swiper('.employees-slider', {
     },
   });
 
-// //Добавление *крайней* точки пагинации в вертикальном слайдере
+//Добавление *крайней* точки пагинации в вертикальном слайдере
 
   $.Tween.propHooks.number = {
     get: function ( tween ){
@@ -152,6 +154,7 @@ var swiperEmployees = new Swiper('.employees-slider', {
     $('.mask__header-top').toggleClass('mask__header-top--show');
   });
 
+  //Перенес
   var swiperAboutCompany = new Swiper('.about-company-slider', {
     slidesPerView: 3,
     loop: true,
