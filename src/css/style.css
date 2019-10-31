@@ -1038,7 +1038,8 @@ main {
   @media (max-width: 1169px) {
     .breadcrumbs__list {
       position: static;
-      padding-top: 90px; } }
+      padding-top: 90px;
+      margin-bottom: 20px; } }
   @media (max-width: 767px) {
     .breadcrumbs__list {
       padding-top: 70px; } }
@@ -1484,10 +1485,10 @@ main {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin-bottom: 15px; }
 
-.pagination-text {
+.first-page-pagination .pagination-text {
   /*Текс горизонтальных слайдов*/ }
   @media (max-width: 1169px) {
-    .pagination-text {
+    .first-page-pagination .pagination-text {
       display: none; } }
 
 /*Главный блок слайда*/
@@ -1733,7 +1734,17 @@ main {
   background-size: cover;
   padding-top: 150px;
   padding-right: 120px;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-bottom: 10px; }
+  @media (max-width: 1169px) {
+    .index-about-company {
+      padding-right: 60px;
+      padding-bottom: 20px;
+      padding-top: 20px; } }
+  @media (max-width: 767px) {
+    .index-about-company {
+      padding-right: 20px;
+      padding-top: 50px; } }
 
 .index-about-company__wrapper {
   display: -webkit-box;
@@ -1742,19 +1753,37 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 767px) {
+    .index-about-company__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .index-about-company__left,
 .index-about-company__right {
   width: 45%; }
+  @media (max-width: 767px) {
+    .index-about-company__left,
+    .index-about-company__right {
+      width: 100%; } }
 
 .about-company-slider {
   padding-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  @media (max-width: 767px) {
+    .about-company-slider {
+      max-width: 300px; } }
 
 .about-company-slider .swiper-slide img {
   height: auto;
   max-width: 300px; }
+  @media (max-width: 1169px) {
+    .about-company-slider .swiper-slide img {
+      max-width: none;
+      width: 100%;
+      height: auto; } }
 
 .about-company-slider .swiper-slide {
   -webkit-transition: all 0.5s;
@@ -1798,21 +1827,24 @@ main {
   background-size: cover;
   padding-top: 150px;
   padding-right: 120px;
-  padding-left: 20px;
   position: relative; }
-
-.employees__container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  max-width: 80%; }
+  @media (max-width: 1169px) {
+    .employees {
+      padding-right: 60px;
+      padding-left: 0;
+      padding-top: 20px; } }
+  @media (max-width: 767px) {
+    .employees {
+      padding-right: 20px;
+      padding-left: 20px; } }
 
 .employees-slider {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 150px; }
+  @media (max-width: 1169px) {
+    .employees-slider {
+      padding-top: 10px; } }
 
 .employee-slide {
   background-color: grey;
@@ -1830,19 +1862,31 @@ main {
 .employee-slide.swiper-slide-prev {
   -webkit-transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(10deg) translateX(10%) !important;
           transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(10deg) translateX(10%) !important; }
+  @media (max-width: 1169px) {
+    .employee-slide.swiper-slide-prev {
+      -webkit-transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(10deg) translateX(0) !important;
+              transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(10deg) translateX(0) !important; } }
 
 .employee-slide.swiper-slide-active {
   background-color: #C4C4C4;
   width: 80% !important;
   -webkit-transform: translateX(10%) !important;
           transform: translateX(10%) !important; }
+  @media (max-width: 1169px) {
+    .employee-slide.swiper-slide-active {
+      width: 100% !important;
+      -webkit-transform: none !important;
+              transform: none !important; } }
 
 .employee-slide__left {
   max-width: 320px;
   margin-right: 25px; }
+  @media (max-width: 1169px) {
+    .employee-slide__left {
+      display: none; } }
 
 .employee-slide__right {
-  max-width: 420px;
+  max-width: 480px;
   margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1852,26 +1896,32 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #000000; }
+  @media (max-width: 1169px) {
+    .employee-slide__right {
+      max-width: 100%;
+      margin-left: 0; } }
 
 .employee-slide__title {
   font-size: 21px;
   line-height: 24px;
   font-weight: 500; }
 
+.employee-slide__text {
+  margin-bottom: 10px; }
+
 .employee-slide__thumbs-title {
   margin-top: auto;
   margin-bottom: 25px; }
 
-.employee-thumbs-slide .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+@media (max-width: 1169px) {
+  .employee-thumbs-slide {
+    display: none; } }
 
-.employee-thumbs-slide .swiper-slide img {
-  display: block; }
+@media (max-width: 1169px) {
+  .employee-thumbs-slide-tablet .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block; } }
 
 .employees-slider .swiper-pagination-bullet {
   opacity: 0;
@@ -1905,6 +1955,9 @@ main {
   font-weight: 500;
   margin-right: 30px;
   text-align: left; }
+  @media (max-width: 767px) {
+    .employees-slider .pagination-position {
+      font-size: 22px; } }
 
 .employees-slider .pagination-text {
   min-width: 150px;
@@ -1913,6 +1966,25 @@ main {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-align: right; }
+
+.employee-portfolio__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0; }
+
+.employee-portfolio__item {
+  margin-right: 20px;
+  margin-bottom: 10px; }
+
+.employee-portfolio__item img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 .stages-page {
   background-image: url(../img/paral.svg);

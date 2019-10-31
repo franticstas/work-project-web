@@ -310,7 +310,7 @@
   margin-bottom: 15px;
 }
 
-.pagination-text {/*Текс горизонтальных слайдов*/
+.first-page-pagination .pagination-text {/*Текс горизонтальных слайдов*/
   @include desktop {
     display: none;
   }

@@ -144,11 +144,23 @@ $(document).ready(function() {
 var swiperAboutCompany = new Swiper('.about-company-slider', {
   slidesPerView: 3,
   loop: true,
+  observer: true,
+  observeParents: true,
   centeredSlides: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpointsInverse: true,
+  breakpoints: {
+    1170: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+    }
+  }
 });
 //-----------------------------------------------------------------------------
 //Инициализация слайдера сотрудников
@@ -159,17 +171,24 @@ var swiperEmployees = new Swiper('.employees-slider', {
   loop: true,
   initialSlide: 1,
   touchRatio: 0,
+  observer: true,
+  observeParents: true,
   centeredSlides: true,
+  breakpointsInverse: true,
+  breakpoints: {
+    1170: {
+      coverflowEffect: {
+        rotate: 10,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+    },
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-  coverflowEffect: {
-    rotate: 10,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows : true,
   },
   pagination: {
     el: '.employee-slide-pagination',
@@ -197,23 +216,92 @@ var galleryTop = new Swiper('.portfolio-top', {
 });
 //-----------------------------------------------------------------------------
 //Инициализация слайда 2го сотрудника
-var employeeThumbs = new Swiper('.employee-thumbs-slide', {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  //freeMode: true,
-  //watchSlidesVisibility: true,
-  //watchSlidesProgress: true,
-});
-var employeeTop = new Swiper('.employee-top-slide', {
-  spaceBetween: 10,
-  slidesPerView: 1,
-  observer: true,
-  observeParents: true,
-  //slidesPerView: 4,
-  thumbs: {
-    swiper: employeeThumbs
-  }
-});
+// var employeeThumbs = new Swiper('.employee-thumbs-slide', {
+//   slidesPerView: 4,
+//   spaceBetween: 30,
+//   // observer: true,
+//   // observeParents: true,
+//   //freeMode: true,
+//   //watchSlidesVisibility: true,
+//   //watchSlidesProgress: true,
+// });
+// var employeeTop = new Swiper('.employee-top-slide', {
+//   spaceBetween: 10,
+//   slidesPerView: 1,
+//   observer: true,
+//   observeParents: true,
+//   //slidesPerView: 4,
+//   thumbs: {
+//     swiper: employeeThumbs
+//   }
+// });
+//-----------------------------------------------------------------------------
+//   var employeeThumbsTablet = new Swiper('.employee-thumbs-slide-tablet', {
+//     slidesPerView: 2,
+//     spaceBetween: 30,
+//     //breakpointsInverse: true,
+//     // breakpoints: {
+//     //   768: {
+//     //     slidesPerView: 2,
+//     //   },
+//     // },
+//   });
+
+  //
+  // var employeeThumbsTablet1 = new Swiper('.employee-thumbs-slide-tablet1', {
+  //   slidesPerView: 2,
+  //   spaceBetween: 30,
+  //   //breakpointsInverse: true,
+  //   // breakpoints: {
+  //   //   768: {
+  //   //     slidesPerView: 2,
+  //   //   },
+  //   // },
+  // });
+  //
+  // var employeeThumbsTablet2 = new Swiper('.employee-thumbs-slide-tablet2', {
+  //   slidesPerView: 2,
+  //   spaceBetween: 30,
+  //   //breakpointsInverse: true,
+  //   // breakpoints: {
+  //   //   768: {
+  //   //     slidesPerView: 2,
+  //   //   },
+  //   // },
+  // });
+  //
+  // var employeeThumbsTablet3 = new Swiper('.employee-thumbs-slide-tablet3', {
+  //   slidesPerView: 2,
+  //   spaceBetween: 30,
+  //   //breakpointsInverse: true,
+  //   // breakpoints: {
+  //   //   768: {
+  //   //     slidesPerView: 2,
+  //   //   },
+  //   // },
+  // });
+  //
+  // var employeeThumbsTablet4 = new Swiper('.employee-thumbs-slide-tablet4', {
+  //   slidesPerView: 2,
+  //   spaceBetween: 30,
+  //   //breakpointsInverse: true,
+  //   // breakpoints: {
+  //   //   768: {
+  //   //     slidesPerView: 2,
+  //   //   },
+  //   // },
+  // });
+  //
+  // var employeeThumbsTablet5 = new Swiper('.employee-thumbs-slide-tablet5', {
+  //   slidesPerView: 2,
+  //   spaceBetween: 30,
+  //   //breakpointsInverse: true,
+  //   // breakpoints: {
+  //   //   768: {
+  //   //     slidesPerView: 2,
+  //   //   },
+  //   // },
+  // });
 //-----------------------------------------------------------------------------
 //Кастомная метка на картах
   ymaps.ready(function () {
